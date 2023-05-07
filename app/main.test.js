@@ -31,3 +31,18 @@ describe("Given a length function", () => {
     });
   });
 });
+
+import pop from "./main.js";
+describe("Given a pop function", () => {
+  describe("When it receives an array", () => {
+    test("Then it should return the original array -1", () => {
+      const array = ["colacao", "leche", "vaso"];
+
+      const expectedResult = array - 1;
+
+      const result = pop(array);
+
+      expect(result).toBe(expectedResult);
+    });
+  });
+});
